@@ -1,0 +1,10 @@
+<div class="movies">
+    <section *ngFor="let movie of movies$ | async ">
+        <ul>
+            <li>{{movie.name}}</li>
+            <li>{{movie.actor_actress}}</li>
+            <li>{{movie.director}}</li>
+            <li>{{movie.year}}</li>
+        </ul>
+    </section>
+</div>
